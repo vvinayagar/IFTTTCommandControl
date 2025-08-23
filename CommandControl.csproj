@@ -111,9 +111,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="client_secret_990038621125-bv4d35omc54hoc51d87fcnite8qlggeu.apps.googleusercontent.com.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="mycommand-413502-78d4df28efc0.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
