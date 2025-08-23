@@ -5,20 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CommandControl"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="379" Width="800" StateChanged="Window_StateChanged" Closing="Window_Closing">
     <Grid>
         <Label Content="Credential" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="42,118,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="42,163,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="117,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="117,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Key" HorizontalAlignment="Left" Margin="42,265,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtKey" HorizontalAlignment="Left" Margin="117,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="42,395,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,1.054" Click="Button_Click"/>
-        <Button x:Name="btnTest" Content="Test File" HorizontalAlignment="Left" Margin="282,272,0,0" VerticalAlignment="Top" Click="btnTest_Click"/>
-        <ListBox x:Name="lsLogs" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="486,0,0,0"/>
-        <Button x:Name="btnDetails" Content="List Details" HorizontalAlignment="Left" Margin="282,307,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.076,0.403" Click="Button_Click_1"/>
-        <Button x:Name="btnTimer" Content="Start Service" HorizontalAlignment="Left" Margin="412,0,0,9" VerticalAlignment="Bottom" Click="btnTimer_Click"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="34,49,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="34,94,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="109,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="109,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Key" HorizontalAlignment="Left" Margin="34,148,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtKey" HorizontalAlignment="Left" Margin="110,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSave" Content="Save" Margin="37,0,0,43" RenderTransformOrigin="0,1.054" Click="Button_Click" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="43"/>
+        <Button x:Name="btnTest" Content="Test File" HorizontalAlignment="Left" Margin="274,155,0,0" VerticalAlignment="Top" Click="btnTest_Click"/>
+        <ListBox x:Name="lsLogs" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="486,0,0,10"/>
+        <Button x:Name="btnDetails" Content="List Details" HorizontalAlignment="Left" Margin="274,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.076,0.403" Click="Button_Click_1"/>
+        <Button x:Name="btnTimer" Content="Start Service" HorizontalAlignment="Left" Margin="400,0,0,43" VerticalAlignment="Bottom" Click="btnTimer_Click" RenderTransformOrigin="0.493,3.054"/>
+        <TextBox x:Name="txtCommandPath" HorizontalAlignment="Left" Margin="136,231,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Command Path" HorizontalAlignment="Left" Margin="34,227,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnPath" Content="Select Path" Margin="274,231,448,0" Click="btnPath_Click" Height="20" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkStartInStartup" Content="Start at startup" Margin="92,0,0,36" Checked="checkStartInStartup_Checked" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="138" />
 
     </Grid>
 </Window>
