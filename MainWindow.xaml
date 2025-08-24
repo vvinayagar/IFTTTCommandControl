@@ -5,24 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CommandControl"
         mc:Ignorable="d"
-        Title="MainWindow" Height="379" Width="800" StateChanged="Window_StateChanged" Closing="Window_Closing">
+        Title="MainWindow" Height="487" Width="800" StateChanged="Window_StateChanged" Closing="Window_Closing">
     <Grid>
         <Label Content="Credential" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="34,49,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="34,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="34,75,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="109,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="109,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="109,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Key" HorizontalAlignment="Left" Margin="34,148,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtKey" HorizontalAlignment="Left" Margin="110,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSave" Content="Save" Margin="37,0,0,43" RenderTransformOrigin="0,1.054" Click="Button_Click" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="43"/>
-        <Button x:Name="btnTest" Content="Test File" HorizontalAlignment="Left" Margin="274,155,0,0" VerticalAlignment="Top" Click="btnTest_Click"/>
+        <Button x:Name="btnSave" Content="Save" Margin="14,0,0,10" RenderTransformOrigin="0,1.054" Click="Button_Click" HorizontalAlignment="Left" Width="43" Height="26" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnTest" Content="Test File" HorizontalAlignment="Left" Margin="34,202,0,0" VerticalAlignment="Top" Click="btnTest_Click" RenderTransformOrigin="0.495,-0.148"/>
         <ListBox x:Name="lsLogs" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="486,0,0,10"/>
         <Button x:Name="btnDetails" Content="List Details" HorizontalAlignment="Left" Margin="274,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.076,0.403" Click="Button_Click_1"/>
-        <Button x:Name="btnTimer" Content="Start Service" HorizontalAlignment="Left" Margin="400,0,0,43" VerticalAlignment="Bottom" Click="btnTimer_Click" RenderTransformOrigin="0.493,3.054"/>
-        <TextBox x:Name="txtCommandPath" HorizontalAlignment="Left" Margin="136,231,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Command Path" HorizontalAlignment="Left" Margin="34,227,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnPath" Content="Select Path" Margin="274,231,448,0" Click="btnPath_Click" Height="20" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkStartInStartup" Content="Start at startup" Margin="92,0,0,36" Checked="checkStartInStartup_Checked" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="138" />
+        <Button x:Name="btnTimer" Content="Start Service" HorizontalAlignment="Left" Margin="400,0,0,24" VerticalAlignment="Bottom" Click="btnTimer_Click" RenderTransformOrigin="0.493,3.054"/>
+        <TextBox x:Name="txtCommandPath" HorizontalAlignment="Left" Margin="132,375,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Command Path" HorizontalAlignment="Left" Margin="35,371,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnPath" Content="Select Path" Margin="257,374,465,0" Click="btnPath_Click" Height="20" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkStartInStartup" Content="Start at startup" Margin="92,0,0,17" Checked="checkStartInStartup_Checked" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="138" />
+        <TextBox x:Name="txtClientID" HorizontalAlignment="Left" Margin="116,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+        <Label Content="Client ID" HorizontalAlignment="Left" Margin="34,247,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtClientSecret" HorizontalAlignment="Left" Margin="116,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+        <Label Content="Client Secret" HorizontalAlignment="Left" Margin="35,278,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtJsonPath" HorizontalAlignment="Left" Margin="137,313,0,0" VerticalAlignment="Top" Width="120" TextChanged="txtJsonPath_TextChanged" Text="C:\Users\v_vin\source\repos\vvinayagar\IFTTTCommandControl\client_secret_992112338546-348e4vae0s9qjkbps9aunduggh0tqld0.apps.googleusercontent.com.json"/>
+        <Label Content="JSON Path" HorizontalAlignment="Left" Margin="35,308,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnJsonPath" Content="Select Path" Margin="257,311,465,0" Height="20" VerticalAlignment="Top" Click="btnJsonPath_Click"/>
 
     </Grid>
 </Window>
